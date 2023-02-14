@@ -1,0 +1,73 @@
+.draggable-window {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px;
+    border-radius: 15px;
+    padding: 5px;
+}
+.draggable-content {
+    flex-grow: 1;
+}
+.draggable-footer {
+    border-top: 1px solid grey;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer-btn1 {
+    position: relative;
+    background-color: #4c82af;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.footer-btn1:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  .footer-btn1:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  input[type="text"] {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
